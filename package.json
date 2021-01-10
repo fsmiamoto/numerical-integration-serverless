@@ -1,17 +1,24 @@
 {
-  "name": "integral-lambda",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "numerical-integration-serverless",
+  "version": "0.0.1",
+  "description": "A simple serverless function for making a numerical integrations using Python's great scientific libraries",
   "dependencies": {
-    "serverless-python-requirements": "^5.1.0",
-    "serverless-wsgi": "^1.7.5"
+    "serverless": "^1.71.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "serverless-wsgi": "^1.7.6"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "sls deploy",
+    "dev": "sls wsgi serve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "python",
+    "numerical integration",
+    "flask",
+    "aws lambda"
+  ],
+  "author": "Francisco Miamoto",
+  "license": "MIT"
 }
